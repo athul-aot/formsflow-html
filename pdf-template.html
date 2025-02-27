@@ -1,558 +1,627 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reportable Circumstance 2025 PDF Template</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f7fa;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-            background-color: white;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reportable Circumstance 2025</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      color: #333;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 0;
+    }
+    img{
+      max-width: 300px;
+    }
+    .print-container {
+      max-width: 8.5in;
+      margin: 0 auto;
+      padding: 0.5in;
+      background-color: #f5f7fa;
+    }
 
-        .formName {
-            font-size: 1.75rem;
-            font-weight: 600;
-            color: #0e4174;
-        }
+    .form-document {
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 0.5in;
+    }
 
-        .section-container {
-            background-color: white;
-            border-radius: 5px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin-bottom: 30px;
-        }
-        h2 {
-            margin: 0;
-            padding: 0;
-            color: #0e4174;
-            font-size: 1.4rem;
-            margin-bottom: 15px;
-        }
+    .form-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid #0e4174;
+    }
 
-        fieldset {
-            max-width: 1000px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            padding: 20px;
-            box-sizing: border-box;
-            background-color: white;
-            border-radius: 5px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            border: 1px solid #e2e8f0;
-        }
+    .logo {
+      display: flex;
+      align-items: center;
+      color: #0e4174;
+      font-size: 2rem;
+    }
 
-        legend {
-            font-size: 1.4rem;
-            font-weight: 600;
-            color: #0e4174;
-            padding: 0 10px;
-        }
+    .form-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #0e4174;
+      align-items: end;
+    }
 
-        label {
-            font-weight: bold;
-            display: block;
-            margin-bottom: 5px;
-        }
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #0e4174;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid #8aa0bd;
+    }
 
-        input[type="text"], 
-        input[type="date"],
-        textarea {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            width: 100%;
-            box-sizing: border-box;
-        }
+    .form-section {
+      margin-bottom: 1.5rem;
+      border: 1px solid #e2e8f0;
+      padding: 1rem;
+    }
 
-        input[type="radio"] {
-            margin-right: 5px;
-        }
+    .section-heading {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #0e4174;
+      margin-bottom: 1rem;
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid #e2e8f0;
+    }
 
-        input[type="checkbox"] {
-            margin-top: 3px;
-        }
+    .form-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
 
-        textarea {
-            min-height: 80px;
-            resize: vertical;
-        }
+    .form-group {
+      flex: 1 1 30%;
+      min-width: 200px;
+    }
 
-        .form-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-bottom: 15px;
-        }
+    .form-group.full-width {
+      flex: 1 1 100%;
+      width: 100%;
+    }
 
-        .form-group {
-            flex: 1 1 30%;
-            min-width: 250px;
-        }
-        .basicRow {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: start;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-bottom: 15px;
-        }
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 0.25rem;
+      font-size: 0.9rem;
+    }
 
-        .basicRow1 {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            align-items: start;
-            width: 48%;
-        }
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      font-size: 0.9rem;
+      box-sizing: border-box;
+    }
 
-        .radioGroup {
-            display: flex;
-            flex-direction: row;
-            gap: 10px;
-            align-items: center;
-        }
+    textarea {
+      resize: vertical;
+      min-height: 4rem;
+    }
 
-        .checkboxes {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-            margin-top: 10px;
-        }
+    .radio-group {
+      display: flex;
+      gap: 1rem;
+    }
 
-        .checkbox-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 5px;
-        }
+    .radio-option {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
 
-        .section-divider {
-            border-top: 1px solid #e2e8f0;
-            margin: 20px 0;
-            padding-top: 20px;
-        }
+    .radio-option label {
+      font-weight: normal;
+      margin-bottom: 0;
+    }
 
-        .section-header {
-            font-size: 1.1rem;
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: #0e4174;
-        }
+    .checkbox-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5rem;
+    }
 
-        @media (max-width: 768px) {
-            .form-group {
-                flex: 1 1 100%;
-            }
-            
-            .basicRow1 {
-                width: 100%;
-                margin-bottom: 10px;
-            }
-            
-            .checkboxes {
-                grid-template-columns: 1fr;
-            }
-            
-            .form-row {
-                flex-direction: column;
-                gap: 10px;
-            }
-        }
-    </style>
+    .checkbox-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .checkbox-item label {
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+    @media print {
+      body {
+        background-color: white;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .print-container {
+        width: 100%;
+        max-width: none;
+        padding: 0;
+        margin: 0;
+        background-color: white;
+      }
+      
+      .form-document {
+        box-shadow: none;
+        border: none;
+        padding: 0.5in;
+      }
+      
+      .page-break-after {
+        page-break-after: always;
+      }
+      
+      .page-break-before {
+        page-break-before: always;
+      }
+      
+      input, textarea {
+        border: 1px solid #ccc !important;
+      }
+      input[type="text"],
+      textarea {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      
+      input[type="radio"],
+      input[type="checkbox"] {
+        -webkit-appearance: none;
+        width: 14px;
+        height: 14px;
+        border: 1px solid #000;
+        border-radius: 50%;
+        outline: none;
+        box-shadow: 0 0 0 1px #000;
+        display: inline-block;
+        position: relative;
+      }
+      
+      input[type="checkbox"] {
+        border-radius: 3px;
+      }
+      
+      input[type="radio"]:checked,
+      input[type="checkbox"]:checked {
+        background-color: #000;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div><img src="logo.png"></div>
-        <div class="formName">Reportable Circumstance 2025</div>
-    </header>
-    
-    <form>
-        <!-- Reportable Page -->
-        <section class="section-container">
-            <h2>Reportable</h2>
-            <!-- Submission Information Panel -->
-            <fieldset>
-                <legend>Submission Information</legend>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="reportableCircumstanceSubmittedBy">Reportable Circumstance Submitted By</label>
-                        <input type="text" id="reportableCircumstanceSubmittedBy">
-                    </div>
-                    <div class="form-group">
-                        <label for="programArea">Program Area</label>
-                        <input type="text" id="programArea">
-                    </div>
-                    <div class="form-group">
-                        <label for="officeCode">Office Code</label>
-                        <input type="text" id="officeCode">
-                    </div>
-                </div>
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="submitterEmail">Submitter Email</label>
-                        <input type="text" id="submitterEmail">
-                    </div>
-                    <div class="form-group">
-                        <label for="serviceDeliveryArea">Service Delivery Area</label>
-                        <input type="text" id="serviceDeliveryArea">
-                    </div>
-                    <div class="form-group">
-                        <label for="teamLeaderName">Team Leader/Supervisor Name</label>
-                        <input type="text" id="teamLeaderName">
-                    </div>
-                </div>
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="practitioner">Practitioner</label>
-                        <input type="text" id="practitioner">
-                    </div>
-                </div>
-            </fieldset>
-
-            <!-- Incident Information Panel -->
-            <fieldset>
-                <legend>Incident Information</legend>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="dateOfIncident">Date Of Incident</label>
-                        <input type="date" id="dateOfIncident">
-                    </div>
-                    <div class="form-group">
-                        <label for="dateMinistry">Date Ministry/ICSA Notified</label>
-                        <input type="date" id="dateMinistry">
-                    </div>
-                    <div class="form-group">
-                        <label for="careStatus">Care Status</label>
-                        <input type="text" id="careStatus">
-                    </div>
-                </div>
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="reportableType">Reportable Type</label>
-                        <input type="text" id="reportableType">
-                    </div>
-                    <div class="form-group">
-                        <label for="reportableCategory">Reportable Category</label>
-                        <input type="text" id="reportableCategory">
-                    </div>
-                    <div class="form-group">
-                        <label for="reportableSubCategory">Reportable Sub Category</label>
-                        <input type="text" id="reportableSubCategory">
-                    </div>
-                </div>
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="other">If Other, Please Specify</label>
-                        <input type="text" id="other">
-                    </div>
-                    <div class="form-group">
-                        <label for="youthJusticeCriticalIncident">Youth Justice Critical Incident</label>
-                        <input type="text" id="youthJusticeCriticalIncident">
-                    </div>
-                </div>
-                
-                <div class="form-row">
-                    <div class="form-group" style="flex: 1 1 100%;">
-                        <label for="descriptionOfIncident">Description Of Incident</label>
-                        <textarea id="descriptionOfIncident"></textarea>
-                    </div>
-                </div>
-                
-                <div class="form-row">
-                    <div class="form-group" style="flex: 1 1 100%;">
-                        <label for="practiceAnalystComments">Practice Analyst Comments</label>
-                        <input type="text" id="practiceAnalystComments">
-                    </div>
-                </div>
-            </fieldset>
-
-            <!-- Child/Youth Information Panel -->
-            <fieldset>
-                <legend>Child/Youth Information</legend>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" id="lastName">
-                    </div>
-                    <div class="form-group">
-                        <label for="firstName">First Name</label>
-                        <input type="text" id="firstName">
-                    </div>
-                    <div class="form-group">
-                        <label for="preferredName">Preferred Name</label>
-                        <input type="text" id="preferredName">
-                    </div>
-                </div>
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="gender">Gender</label>
-                        <input type="text" id="gender">
-                    </div>
-                    <div class="form-group">
-                        <label for="dateOfBirth">Date Of Birth</label>
-                        <input type="date" id="dateOfBirth">
-                    </div>
-                    <div class="form-group">
-                        <label for="age">Age</label>
-                        <input type="text" id="age">
-                    </div>
-                </div>
-            </fieldset>
-
-            <!-- Indigenous Information Panel -->
-            <fieldset>
-                <legend>Indigenous Information</legend>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="indigenous">Indigenous</label>
-                        <input type="text" id="indigenous">
-                    </div>
-                    <div class="form-group">
-                        <label for="bandName">Band Name</label>
-                        <input type="text" id="bandName">
-                    </div>
-                    <div class="form-group">
-                        <label for="indigenousAuthority">Indigenous Authority</label>
-                        <input type="text" id="indigenousAuthority">
-                    </div>
-                </div>
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="indigenousHeritage">Indigenous Heritage</label>
-                        <input type="text" id="indigenousHeritage">
-                    </div>
-                    <div class="form-group">
-                        <label for="icfsa">Indigenous Child and Family Service Agency</label>
-                        <input type="text" id="icfsa">
-                    </div>
-                    <div class="form-group">
-                        <label for="communityAgreement">Community/Coordination Agreement</label>
-                        <input type="text" id="communityAgreement">
-                    </div>
-                </div>
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="indigenousHeritage2">Indigenous Heritage</label>
-                        <input type="text" id="indigenousHeritage2">
-                    </div>
-                </div>
-            </fieldset>
-        </section>
-
-        <!-- Youth Justice Page -->
-        <section class="section-container">
-            <h2>Youth Justice</h2>
-            <!-- Youth Justice Panel -->
-            <fieldset>
-                <legend>Youth Justice</legend>
-                
-                <div class="basicRow">
-                  <div class="basicRow1">
-                    <label for="correctionalNumber">Correctional Service Number</label>
-                    <input type="text" id="correctionalNumber" required>
-                  </div>
-                  <div class="basicRow1"> 
-                    <label for="youthLocation">Youth Current Location</label>
-                    <input type="text" id="youthLocation" required>
-                  </div>
-                </div>
-                
-                <div class="basicRow">
-                  <div class="basicRow1">
-                    <label for="supervisionLevel">Supervision Level</label>
-                    <input type="text" id="supervisionLevel" required>
-                  </div>
-                  <div class="basicRow1">
-                    <label for="whereabouts">Whereabouts</label>
-                    <input type="text" id="whereabouts" required>
-                  </div>
-                </div>
-                
-                <div class="basicRow">
-                  <div class="basicRow1">
-                    <label>Was the youth AWOL at the time of the incident?</label>
-                    <div class="radioGroup">
-                      <input type="radio" id="awolYes" name="awol" value="Yes" required>
-                      <label for="awolYes" style="font-weight: normal;">Yes</label>
-                      <input type="radio" id="awolNo" name="awol" value="No">
-                      <label for="awolNo" style="font-weight: normal;">No</label>
-                    </div>
-                  </div>
-                  <div class="basicRow1">
-                    <label>Was a warrant active at the time of the incident?</label>
-                    <div class="radioGroup">
-                      <input type="radio" id="warrantYes" name="warrant" value="Yes" required>
-                      <label for="warrantYes" style="font-weight: normal;">Yes</label>
-                      <input type="radio" id="warrantNo" name="warrant" value="No">
-                      <label for="warrantNo" style="font-weight: normal;">No</label>
-                    </div>
-                  </div>
-                </div>
+  <div class="print-container">
+    <div class="form-document">
+      <header class="form-header">
+        <div class="logo">
+          <img src="logo.png">
+        </div>
+        <div class="form-title">Reportable Circumstance 2025</div>
+      </header>
+      
+      <div class="page-break-after">
+        <h2 class="section-title">Reportable</h2>
+        
+        <!-- Submission Information Section -->
+        <div class="form-section">
+          <h3 class="section-heading">Submission Information</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="reportableCircumstanceSubmittedBy">Reportable Circumstance Submitted By</label>
+              <input type="text" id="reportableCircumstanceSubmittedBy">
+            </div>
+            <div class="form-group">
+              <label for="programArea">Program Area</label>
+              <input type="text" id="programArea">
+            </div>
+            <div class="form-group">
+              <label for="officeCode">Office Code</label>
+              <input type="text" id="officeCode">
+            </div>
+          </div>
           
-                <div class="basicRow">
-                  <div class="basicRow1">
-                    <label>Is the youth facing new charges in relation to the incident?</label>
-                    <div class="radioGroup">
-                      <input type="radio" id="chargesYes" name="charges" value="Yes" required>
-                      <label for="chargesYes" style="font-weight: normal;">Yes</label>
-                      <input type="radio" id="chargesNo" name="charges" value="No">
-                      <label for="chargesNo" style="font-weight: normal;">No</label>
-                    </div>
-                  </div>
-                  <div class="basicRow1">
-                    <label>Has a new warrant been issued in relation to the incident?</label>
-                    <div class="radioGroup">
-                      <input type="radio" id="newWarrantYes" name="newWarrant" value="Yes" required>
-                      <label for="newWarrantYes" style="font-weight: normal;">Yes</label>
-                      <input type="radio" id="newWarrantNo" name="newWarrant" value="No">
-                      <label for="newWarrantNo" style="font-weight: normal;">No</label>
-                    </div>
-                  </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="submitterEmail">Submitter Email</label>
+              <input type="text" id="submitterEmail">
+            </div>
+            <div class="form-group">
+              <label for="serviceDeliveryArea">Service Delivery Area</label>
+              <input type="text" id="serviceDeliveryArea">
+            </div>
+            <div class="form-group">
+              <label for="teamLeaderName">Team Leader/Supervisor Name</label>
+              <input type="text" id="teamLeaderName">
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="practitioner">Practitioner</label>
+              <input type="text" id="practitioner">
+            </div>
+          </div>
+        </div>
+
+        <!-- Incident Information Section -->
+        <div class="form-section">
+          <h3 class="section-heading">Incident Information</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="dateOfIncident">Date Of Incident</label>
+              <input type="text" id="dateOfIncident">
+            </div>
+            <div class="form-group">
+              <label for="dateMinistry">Date Ministry/ICSA Notified</label>
+              <input type="text" id="dateMinistry">
+            </div>
+            <div class="form-group">
+              <label for="careStatus">Care Status</label>
+              <input type="text" id="careStatus">
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="reportableType">Reportable Type</label>
+              <input type="text" id="reportableType">
+            </div>
+            <div class="form-group">
+              <label for="reportableCategory">Reportable Category</label>
+              <input type="text" id="reportableCategory">
+            </div>
+            <div class="form-group">
+              <label for="reportableSubCategory">Reportable Sub Category</label>
+              <input type="text" id="reportableSubCategory">
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="other">If Other, Please Specify</label>
+              <input type="text" id="other">
+            </div>
+            <div class="form-group">
+              <label for="youthJusticeCriticalIncident">Youth Justice Critical Incident</label>
+              <input type="text" id="youthJusticeCriticalIncident">
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="descriptionOfIncident">Description Of Incident</label>
+              <textarea id="descriptionOfIncident"></textarea>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="practiceAnalystComments">Practice Analyst Comments</label>
+              <input type="text" id="practiceAnalystComments">
+            </div>
+          </div>
+        </div>
+
+        <!-- Child/Youth Information Section -->
+        <div class="form-section">
+          <h3 class="section-heading">Child/Youth Information</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName">
+            </div>
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName">
+            </div>
+            <div class="form-group">
+              <label for="preferredName">Preferred Name</label>
+              <input type="text" id="preferredName">
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <input type="text" id="gender">
+            </div>
+            <div class="form-group">
+              <label for="dateOfBirth">Date Of Birth</label>
+              <input type="text" id="dateOfBirth">
+            </div>
+            <div class="form-group">
+              <label for="age">Age</label>
+              <input type="text" id="age">
+            </div>
+          </div>
+        </div>
+
+        <!-- Indigenous Information Section -->
+        <div class="form-section">
+          <h3 class="section-heading">Indigenous Information</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="indigenous">Indigenous</label>
+              <input type="text" id="indigenous">
+            </div>
+            <div class="form-group">
+              <label for="bandName">Band Name</label>
+              <input type="text" id="bandName">
+            </div>
+            <div class="form-group">
+              <label for="indigenousAuthority">Indigenous Authority</label>
+              <input type="text" id="indigenousAuthority">
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="indigenousHeritage">Indigenous Heritage</label>
+              <input type="text" id="indigenousHeritage">
+            </div>
+            <div class="form-group">
+              <label for="icfsa">Indigenous Child and Family Service Agency</label>
+              <input type="text" id="icfsa">
+            </div>
+            <div class="form-group">
+              <label for="communityAgreement">Community/Coordination Agreement</label>
+              <input type="text" id="communityAgreement">
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="indigenousHeritage2">Indigenous Heritage</label>
+              <input type="text" id="indigenousHeritage2">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Youth Justice Page - Will start on a new page when printed -->
+      <div class="page-break-before">
+        <h2 class="section-title">Youth Justice</h2>
+        
+        <!-- Youth Justice Section -->
+        <div class="form-section">
+          <h3 class="section-heading">Youth Justice</h3>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="correctionalNumber">Correctional Service Number</label>
+              <input type="text" id="correctionalNumber">
+            </div>
+            <div class="form-group">
+              <label for="youthLocation">Youth Current Location</label>
+              <input type="text" id="youthLocation">
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="supervisionLevel">Supervision Level</label>
+              <input type="text" id="supervisionLevel">
+            </div>
+            <div class="form-group">
+              <label for="whereabouts">Whereabouts</label>
+              <input type="text" id="whereabouts">
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label>Was the youth AWOL at the time of the incident?</label>
+              <div class="radio-group">
+                <div class="radio-option">
+                  <input type="radio" id="awolYes" name="awol" value="Yes">
+                  <label for="awolYes">Yes</label>
                 </div>
-                
-                <label>Active Orders at time of Incident</label>
-                <div class="checkboxes">
-                  <div class="checkbox-item">
-                    <input type="checkbox" id="noActive">
-                    <label for="noActive" style="font-weight: normal;">None / No Active</label>
-                  </div>
-                  <div class="checkbox-item">
-                    <input type="checkbox" id="extrajudicial">
-                    <label for="extrajudicial" style="font-weight: normal;">Extrajudicial sanctions</label>
-                  </div>
-                  <div class="checkbox-item">
-                    <input type="checkbox" id="recognizance">
-                    <label for="recognizance" style="font-weight: normal;">Recognizance/peace bond</label>
-                  </div>
-                  <div class="checkbox-item">
-                    <input type="checkbox" id="bail">
-                    <label for="bail" style="font-weight: normal;">Bail</label>
-                  </div>
-                  <div class="checkbox-item">
-                    <input type="checkbox" id="conditional">
-                    <label for="conditional" style="font-weight: normal;">Conditional discharge</label>
-                  </div>
-                  <div class="checkbox-item">
-                    <input type="checkbox" id="probation">
-                    <label for="probation" style="font-weight: normal;">Probation</label>
-                  </div>
-                  <div class="checkbox-item">
-                    <input type="checkbox" id="intensive">
-                    <label for="intensive" style="font-weight: normal;">Intensive support & supervision</label>
-                  </div>
-                  <div class="checkbox-item">
-                    <input type="checkbox" id="deferredCustody">
-                    <label for="deferredCustody" style="font-weight: normal;">Deferred custody & supervision</label>
-                  </div>
-                  <div class="checkbox-item">
-                    <input type="checkbox" id="supervisionCommunity">
-                    <label for="supervisionCommunity" style="font-weight: normal;">Supervision in the community</label>
-                  </div>
-                  <div class="checkbox-item">
-                    <input type="checkbox" id="conditionalSupervision">
-                    <label for="conditionalSupervision" style="font-weight: normal;">Conditional supervision</label>
-                  </div>
-                  <div class="checkbox-item">
-                    <input type="checkbox" id="ircs">
-                    <label for="ircs" style="font-weight: normal;">IRCS</label>
-                  </div>
-                  <div class="checkbox-item">
-                    <input type="checkbox" id="inCustody">
-                    <label for="inCustody" style="font-weight: normal;">In Custody (Remand or Sentenced)</label>
-                  </div>
+                <div class="radio-option">
+                  <input type="radio" id="awolNo" name="awol" value="No">
+                  <label for="awolNo">No</label>
                 </div>
-                
-                <div class="basicRow1" style="width: 100%;">
-                  <label for="currentOffences">Current Offences (i.e., as per the orders active at the time of the incident)</label>
-                  <textarea id="currentOffences" rows="4"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Was a warrant active at the time of the incident?</label>
+              <div class="radio-group">
+                <div class="radio-option">
+                  <input type="radio" id="warrantYes" name="warrant" value="Yes">
+                  <label for="warrantYes">Yes</label>
                 </div>
-                
-                <div class="basicRow1" style="width: 100%;">
-                  <label for="previousOffences">Previous Offences (specify the type of offence such as violent, property, breaches)</label>
-                  <textarea id="previousOffences" rows="4"></textarea>
+                <div class="radio-option">
+                  <input type="radio" id="warrantNo" name="warrant" value="No">
+                  <label for="warrantNo">No</label>
                 </div>
-                
-                <div class="basicRow1" style="width: 100%;">
-                  <label for="response">Response to Youth Justice Services</label>
-                  <textarea id="response" rows="4"></textarea>
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label>Is the youth facing new charges in relation to the incident?</label>
+              <div class="radio-group">
+                <div class="radio-option">
+                  <input type="radio" id="chargesYes" name="charges" value="Yes">
+                  <label for="chargesYes">Yes</label>
                 </div>
-                
-                <div class="basicRow">
-                  <div class="basicRow1" style="width: 32%;">
-                    <label for="probationOfficer">Youth Probation Officer (given and surname)</label>
-                    <input type="text" id="probationOfficer" required>
-                  </div>
-                  <div class="basicRow1" style="width: 32%;">
-                    <label for="phoneNumber">Phone Number</label>
-                    <input type="text" id="phoneNumber" required>
-                  </div>
-                  <div class="basicRow1" style="width: 32%;">
-                    <label for="placeholder">Placeholder</label>
-                    <input type="text" id="placeholder" required>
-                  </div>
+                <div class="radio-option">
+                  <input type="radio" id="chargesNo" name="charges" value="No">
+                  <label for="chargesNo">No</label>
                 </div>
-                
-                <div class="basicRow">
-                  <div class="basicRow1" style="width: 32%;">
-                    <label for="otherPractitioners">Other MCFD Practitioners</label>
-                    <input type="text" id="otherPractitioners" required>
-                  </div>
-                  <div class="basicRow1" style="width: 32%;">
-                    <label for="programAreas">Program Area(s)</label>
-                    <input type="text" id="programAreas" required>
-                  </div>
-                  <div class="basicRow1" style="width: 32%;">
-                    <label for="otherPhone">Phone Number</label>
-                    <input type="text" id="otherPhone" required>
-                  </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Has a new warrant been issued in relation to the incident?</label>
+              <div class="radio-group">
+                <div class="radio-option">
+                  <input type="radio" id="newWarrantYes" name="newWarrant" value="Yes">
+                  <label for="newWarrantYes">Yes</label>
                 </div>
-            </fieldset>
-            
-            <!-- Response to Incident Panel -->
-            <fieldset>
-                <legend>Response to Incident</legend>
-                
-                <div class="basicRow1" style="width: 100%;">
-                  <label for="youthJusticeActionPlan">Youth Justice Action Plan</label>
-                  <textarea id="youthJusticeActionPlan" rows="3"></textarea>
+                <div class="radio-option">
+                  <input type="radio" id="newWarrantNo" name="newWarrant" value="No">
+                  <label for="newWarrantNo">No</label>
                 </div>
-                
-                <div class="basicRow1" style="width: 100%;">
-                  <label for="policeFollowUp1">Police Information</label>
-                  <input type="text" id="policeFollowUp1">
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label>Active Orders at time of Incident</label>
+              <div class="checkbox-grid">
+                <div class="checkbox-item">
+                  <input type="checkbox" id="noActive">
+                  <label for="noActive">None / No Active</label>
                 </div>
-                
-                <div class="basicRow1" style="width: 100%;">
-                  <label for="additionalIncidentDetailsYJ">Additional Incident Details</label>
-                  <textarea id="additionalIncidentDetailsYJ" rows="3"></textarea>
+                <div class="checkbox-item">
+                  <input type="checkbox" id="extrajudicial">
+                  <label for="extrajudicial">Extrajudicial sanctions</label>
                 </div>
-            </fieldset>
-        </section>
-    </form>
+                <div class="checkbox-item">
+                  <input type="checkbox" id="recognizance">
+                  <label for="recognizance">Recognizance/peace bond</label>
+                </div>
+                <div class="checkbox-item">
+                  <input type="checkbox" id="bail">
+                  <label for="bail">Bail</label>
+                </div>
+                <div class="checkbox-item">
+                  <input type="checkbox" id="conditional">
+                  <label for="conditional">Conditional discharge</label>
+                </div>
+                <div class="checkbox-item">
+                  <input type="checkbox" id="probation">
+                  <label for="probation">Probation</label>
+                </div>
+                <div class="checkbox-item">
+                  <input type="checkbox" id="intensive">
+                  <label for="intensive">Intensive support & supervision</label>
+                </div>
+                <div class="checkbox-item">
+                  <input type="checkbox" id="deferredCustody">
+                  <label for="deferredCustody">Deferred custody & supervision</label>
+                </div>
+                <div class="checkbox-item">
+                  <input type="checkbox" id="supervisionCommunity">
+                  <label for="supervisionCommunity">Supervision in the community</label>
+                </div>
+                <div class="checkbox-item">
+                  <input type="checkbox" id="conditionalSupervision">
+                  <label for="conditionalSupervision">Conditional supervision</label>
+                </div>
+                <div class="checkbox-item">
+                  <input type="checkbox" id="ircs">
+                  <label for="ircs">IRCS</label>
+                </div>
+                <div class="checkbox-item">
+                  <input type="checkbox" id="inCustody">
+                  <label for="inCustody">In Custody (Remand or Sentenced)</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="currentOffences">Current Offences (i.e., as per the orders active at the time of the incident)</label>
+              <textarea id="currentOffences" rows="4"></textarea>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="previousOffences">Previous Offences (specify the type of offence such as violent, property, breaches)</label>
+              <textarea id="previousOffences" rows="4"></textarea>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="response">Response to Youth Justice Services</label>
+              <textarea id="response" rows="4"></textarea>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="probationOfficer">Youth Probation Officer (given and surname)</label>
+              <input type="text" id="probationOfficer">
+            </div>
+            <div class="form-group">
+              <label for="phoneNumber">Phone Number</label>
+              <input type="text" id="phoneNumber">
+            </div>
+            <div class="form-group">
+              <label for="placeholder">Placeholder</label>
+              <input type="text" id="placeholder">
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="otherPractitioners">Other MCFD Practitioners</label>
+              <input type="text" id="otherPractitioners">
+            </div>
+            <div class="form-group">
+              <label for="programAreas">Program Area(s)</label>
+              <input type="text" id="programAreas">
+            </div>
+            <div class="form-group">
+              <label for="otherPhone">Phone Number</label>
+              <input type="text" id="otherPhone">
+            </div>
+          </div>
+        </div>
+        
+        <!-- Response to Incident Section -->
+        <div class="form-section">
+          <h3 class="section-heading">Response to Incident</h3>
+          
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="youthJusticeActionPlan">Youth Justice Action Plan</label>
+              <textarea id="youthJusticeActionPlan" rows="3"></textarea>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="policeFollowUp1">Police Information</label>
+              <input type="text" id="policeFollowUp1">
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="additionalIncidentDetailsYJ">Additional Incident Details</label>
+              <textarea id="additionalIncidentDetailsYJ" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
