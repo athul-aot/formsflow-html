@@ -1,13 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Reportable Circumstance 2025 PDF Template</title>
-</head>
-<body>
-    <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youth Justice Form Template</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f5f7fa;
+      }
+      
+      h2 {
+        margin: 0;
+        padding: 0;
+        color: #0e4174;
+      }
+      
+      .youthJustice {
+        max-width: 1000px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .basicRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        flex-wrap: wrap;
+      }
+      
+      .basicRow1 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: start;
+        width: 48%;
+      }
+      
+      .radioGroup {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+      }
+      
+      label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+      }
+      
+      input[type="text"], textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      
+      input[type="radio"] {
+        margin-right: 5px;
+      }
+      
+      textarea {
+        min-height: 80px;
+        resize: vertical;
+      }
+      
+      .checkboxes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+      
+      .checkbox-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 5px;
+      }
+      
+      input[type="checkbox"] {
+        margin-top: 3px;
+      }
+      
+      .section-divider {
+        border-top: 1px solid #e2e8f0;
+        margin: 20px 0;
+        padding-top: 20px;
+      }
+      
+      .section-header {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: #0e4174;
+      }
+      
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .basicRow1 {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+        
+        .checkboxes {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="youthJustice">
+      <h2>Youth Justice</h2>
+      
+      <div class="basicRow">
+        <div class="basicRow1">
+          <label for="correctionalNumber">Correctional Service Number</label>
+          <input type="text" id="correctionalNumber" required>
+        </div>
+        <div class="basicRow1"> 
+          <label for="youthLocation">Youth Current Location</label>
+          <input type="text" id="youthLocation" required>
+        </div>
+      </div>
+      
+      <div class="basicRow">
+        <div class="basicRow1">
+          <label for="supervisionLevel">Supervision Level</label>
+          <input type="text" id="supervisionLevel" required>
+        </div>
+        <div class="basicRow1">
+          <label for="whereabouts">Whereabouts</label>
+          <input type="text" id="whereabouts" required>
+        </div>
+      </div>
+      
+      <div class="basicRow">
+        <div class="basicRow1">
+          <label>Was the youth AWOL at the time of the incident?</label>
+          <div class="radioGroup">
+            <input type="radio" id="awolYes" name="awol" value="Yes" required>
+            <label for="awolYes" style="font-weight: normal;">Yes</label>
+            <input type="radio" id="awolNo" name="awol" value="No">
+            <label for="awolNo" style="font-weight: normal;">No</label>
+          </div>
+        </div>
+        <div class="basicRow1">
+          <label>Was a warrant active at the time of the incident?</label>
+          <div class="radioGroup">
+            <input type="radio" id="warrantYes" name="warrant" value="Yes" required>
+            <label for="warrantYes" style="font-weight: normal;">Yes</label>
+            <input type="radio" id="warrantNo" name="warrant" value="No">
+            <label for="warrantNo" style="font-weight: normal;">No</label>
+          </div>
+        </div>
+      </div>
 
-    </header>
-</body>
+      <div class="basicRow">
+        <div class="basicRow1">
+          <label>Is the youth facing new charges in relation to the incident?</label>
+          <div class="radioGroup">
+            <input type="radio" id="chargesYes" name="charges" value="Yes" required>
+            <label for="chargesYes" style="font-weight: normal;">Yes</label>
+            <input type="radio" id="chargesNo" name="charges" value="No">
+            <label for="chargesNo" style="font-weight: normal;">No</label>
+          </div>
+        </div>
+        <div class="basicRow1">
+          <label>Has a new warrant been issued in relation to the incident?</label>
+          <div class="radioGroup">
+            <input type="radio" id="newWarrantYes" name="newWarrant" value="Yes" required>
+            <label for="newWarrantYes" style="font-weight: normal;">Yes</label>
+            <input type="radio" id="newWarrantNo" name="newWarrant" value="No">
+            <label for="newWarrantNo" style="font-weight: normal;">No</label>
+          </div>
+        </div>
+      </div>
+      
+      <label>Active Orders at time of Incident</label>
+      <div class="checkboxes">
+        <div class="checkbox-item">
+          <input type="checkbox" id="noActive">
+          <label for="noActive" style="font-weight: normal;">None / No Active</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="extrajudicial">
+          <label for="extrajudicial" style="font-weight: normal;">Extrajudicial sanctions</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="recognizance">
+          <label for="recognizance" style="font-weight: normal;">Recognizance/peace bond</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="bail">
+          <label for="bail" style="font-weight: normal;">Bail</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="conditional">
+          <label for="conditional" style="font-weight: normal;">Conditional discharge</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="probation">
+          <label for="probation" style="font-weight: normal;">Probation</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="intensive">
+          <label for="intensive" style="font-weight: normal;">Intensive support & supervision</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="deferredCustody">
+          <label for="deferredCustody" style="font-weight: normal;">Deferred custody & supervision</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="supervisionCommunity">
+          <label for="supervisionCommunity" style="font-weight: normal;">Supervision in the community</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="conditionalSupervision">
+          <label for="conditionalSupervision" style="font-weight: normal;">Conditional supervision</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="ircs">
+          <label for="ircs" style="font-weight: normal;">IRCS</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="inCustody">
+          <label for="inCustody" style="font-weight: normal;">In Custody (Remand or Sentenced)</label>
+        </div>
+      </div>
+      
+      <div class="basicRow1" style="width: 100%;">
+        <label for="currentOffences">Current Offences (i.e., as per the orders active at the time of the incident)</label>
+        <textarea id="currentOffences" rows="4"></textarea>
+      </div>
+      
+      <div class="basicRow1" style="width: 100%;">
+        <label for="previousOffences">Previous Offences (specify the type of offence such as violent, property, breaches)</label>
+        <textarea id="previousOffences" rows="4"></textarea>
+      </div>
+      
+      <div class="basicRow1" style="width: 100%;">
+        <label for="response">Response to Youth Justice Services</label>
+        <textarea id="response" rows="4"></textarea>
+      </div>
+      
+      <div class="basicRow">
+        <div class="basicRow1" style="width: 32%;">
+          <label for="probationOfficer">Youth Probation Officer (given and surname)</label>
+          <input type="text" id="probationOfficer" required>
+        </div>
+        <div class="basicRow1" style="width: 32%;">
+          <label for="phoneNumber">Phone Number</label>
+          <input type="text" id="phoneNumber" required>
+        </div>
+        <div class="basicRow1" style="width: 32%;">
+          <label for="placeholder">Placeholder</label>
+          <input type="text" id="placeholder" required>
+        </div>
+      </div>
+      
+      <div class="basicRow">
+        <div class="basicRow1" style="width: 32%;">
+          <label for="otherPractitioners">Other MCFD Practitioners</label>
+          <input type="text" id="otherPractitioners" required>
+        </div>
+        <div class="basicRow1" style="width: 32%;">
+          <label for="programAreas">Program Area(s)</label>
+          <input type="text" id="programAreas" required>
+        </div>
+        <div class="basicRow1" style="width: 32%;">
+          <label for="otherPhone">Phone Number</label>
+          <input type="text" id="otherPhone" required>
+        </div>
+      </div>
+      
+      <!-- New Response to Incident Section -->
+      <div class="section-divider"></div>
+      <div class="section-header">Response to Incident</div>
+      
+      <div class="basicRow1" style="width: 100%;">
+        <label for="youthJusticeActionPlan">Youth Justice Action Plan</label>
+        <textarea id="youthJusticeActionPlan" rows="3"></textarea>
+      </div>
+      
+      <div class="basicRow1" style="width: 100%;">
+        <label for="policeFollowUp1">Police Information</label>
+        <input type="text" id="policeFollowUp1">
+      </div>
+      
+      <div class="basicRow1" style="width: 100%;">
+        <label for="additionalIncidentDetailsYJ">Additional Incident Details</label>
+        <textarea id="additionalIncidentDetailsYJ" rows="3"></textarea>
+      </div>
+    </section>
+  </body>
 </html>
