@@ -1,0 +1,86 @@
+{
+    "ReportableCircumstancePreparedBy1": "athul ramesh sample test",
+    "submitterEmail2": "",
+    "Practitioner1": "",
+    "programArea1": "cysn",
+    "ServiceDeliveryArea1": "",
+    "textfield49": "test data",
+    "textfield50": "",
+    "DateofIncident": "2025-02-28T08:00:00.000Z",
+    "reportabletype": "criticalInjury",
+    "PleaseSpecify": "",
+    "ICFSANotified": "2025-02-28T08:00:00.000Z",
+    "reportablecategory": {
+        "label": "Attempted Suicide",
+        "value": "attemptedsuicide"
+    },
+    "careStatus1": "",
+    "reportablesubcategory": {
+        "label": "Cutting/slashing/stabbing",
+        "value": "cutting/slashing/stabbing"
+    },
+    "descriptionOfIncident": "",
+    "lastname": "",
+    "preferredPronouns": "",
+    "firstname": "",
+    "gender": "",
+    "preferredname": "",
+    "dob": "2025-02-28T08:00:00.000Z",
+    "age": "",
+    "indigenous1": "",
+    "indigenous2": [],
+    "indigenousHeritage": {
+        "firstNations": false,
+        "inuit": false,
+        "metis": false,
+        "toBeDetermined": false
+    },
+    "bandName": "",
+    "icfsa": "",
+    "indigenousAuthority": "",
+    "textField": "",
+    "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHRlcm5hbCI6dHJ1ZSwiZm9ybSI6eyJfaWQiOiI2NTZlZGEzOWNhNjYxN2ZiN2UyMmZkZGYifSwidXNlciI6eyJfaWQiOiJ1c2VyQGZmcG9jbW9iaWxlLmZvcm1zZmxvdy5haSIsInJvbGVzIjpbIjY1NmVkYTM4Y2E2NjE3ZmI3ZTIyZmRjNiIsIjY1NmVmMzBkNjRmZDY1YjM1YzYzNGVhMCIsIjY1NmVmMzBkNDJjZDY0ZDM4NTI1Mzc1MiIsIjY1NmVmMzBlNDJjZDY0ZDM4NTI1Mzc2YiJdLCJjdXN0b21Sb2xlcyI6WyIvZmZwb2Ntb2JpbGUtYWRtaW4iLCIvZmZwb2Ntb2JpbGUtYXBwcm92ZXIiLCIvZmZwb2Ntb2JpbGUtY2FtdW5kYS1hZG1pbiIsIi9mZnBvY21vYmlsZS1jbGVyayIsIi9mZnBvY21vYmlsZS1jbGllbnQiLCIvZmZwb2Ntb2JpbGUtZm9ybXNmbG93LXJldmlld2VyIl19LCJ0ZW5hbnRLZXkiOiJmZnBvY21vYmlsZSIsImlhdCI6MTc0MTM0ODUwMSwiZXhwIjoxNzQxMzYyOTAxfQ.hv8yO6qoex6MBKPFkBLWhl7L--DvZ-a1shI8Oh0t_M0",
+    "applicationId": "",
+    "applicationStatus": "",
+    "userGroups": [
+        "/ffpocmobile-admin",
+        "/ffpocmobile-approver",
+        "/ffpocmobile-camunda-admin",
+        "/ffpocmobile-clerk",
+        "/ffpocmobile-client",
+        "/ffpocmobile-formsflow-reviewer"
+    ],
+    "currentUser": "ffpocmobile-user",
+    "submitterEmail": "user@ffpocmobile.formsflow.ai",
+    "submitterFirstName": "Ffpocmobile",
+    "submitterLastName": "User",
+    "currentUserRole": [
+        "ffpocmobile-admin",
+        "ffpocmobile-approver",
+        "ffpocmobile-camunda-admin",
+        "ffpocmobile-clerk",
+        "ffpocmobile-client",
+        "ffpocmobile-formsflow-reviewer"
+    ],
+    "familyInformation": [
+        {
+            "nameOfTheChildsParent": "",
+            "parentrelationship": ""
+        }
+    ],
+    "CYSNFileNumber": "",
+    "historyOfInvolvementcysn": "",
+    "currentInvolvementcysn": "",
+    "additionalIncidentDetailsCYSN": "",
+    "CYSNActionPlan": "",
+    "primaryOwnerAlreadySelected": "no",
+    "programArea2": "childAndFamilyServices",
+    "cfsInvolvementAlreadySelected": "no",
+    "programArea5": "youthJustice",
+    "yjInvolvementAlreadySelected": "no",
+    "programArea6": "cysn",
+    "cysnInvolvementAlreadySelected": "no",
+    "programArea3": "cymh",
+    "cymhInvolvementAlreadySelected": "no",
+    "createRCSubgroupTask": "yes"
+}
