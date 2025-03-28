@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.5;
+            line-height: 1;
             color: #333;
             background-color: #f5f7fa;
             margin: 0;
@@ -36,8 +36,9 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 1rem;
-            padding-bottom: 1rem;
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+            padding-bottom: 0.25rem;
             border-bottom: 2px solid #0e4174;
         }
 
@@ -49,46 +50,46 @@
         }
 
         .form-title {
-            font-size: 1.3rem;
+            font-size: 1rem;
             font-weight: bold;
-            color: #0e4174;
+            color: black;
             align-items: end;
         }
 
         .section-title {
-            font-size: 1.25rem;
+            font-size: 1rem;
             font-weight: bold;
-            color: #0e4174;
-            margin-top: 1rem;
-            margin-bottom: 0.5rem;
+            color: black;
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
             padding-bottom: 0.25rem;
             border-bottom: 1px solid #8aa0bd;
         }
 
         .form-section {
-            margin-bottom: 1rem;
-            padding: 1rem 1rem 0.5rem 1rem;
+            margin-bottom: 0.25em;
+            padding: 0.25rem;
         }
 
         .section-heading {
-            font-size: 1.1rem;
+            font-size: 0.9rem;
             font-weight: bold;
-            color: #0e4174;
-            margin-bottom: 1rem;
+            color: black;
+            margin-top: 0rem;
+            margin-bottom: 0rem;
             padding-bottom: 0.25rem;
-            border-bottom: 1px solid #e2e8f0;
         }
 
         .form-row {
             display: flex;
             flex-wrap: wrap;
-            gap: 1rem;
-            margin-bottom: 1rem;
+            gap: 0.1rem;
+            /*        margin-bottom: 0.25rem;*/
         }
 
         .form-group {
             flex: 1 1 30%;
-            min-width: 200px;
+            min-width: 190px;
         }
 
         .form-group.full-width {
@@ -98,24 +99,25 @@
 
         label {
             display: block;
-            font-weight: bold;
-            margin-bottom: 0.25rem;
-            font-size: 0.9rem;
+            color: black;
+            font-size: 0.74rem;
+            margin-top: 0.25rem;
+            margin-bottom: 0.2rem;
         }
 
         input[type="text"],
         textarea {
             width: 100%;
-            padding: 0.5rem;
-            border: 1px solid #ccc;
+            padding: 0.25rem;
+            border: 1px solid darkgray;
             border-radius: 3px;
-            font-size: 0.9rem;
+            font-size: 0.83rem;
             box-sizing: border-box;
         }
 
         textarea {
             resize: vertical;
-            min-height: 4rem;
+            min-height: 2rem;
         }
 
         .radio-group {
@@ -127,6 +129,7 @@
             display: flex;
             align-items: center;
             gap: 0.25rem;
+            margin-bottom: 1rem;
         }
 
         .radio-option label {
@@ -137,13 +140,13 @@
         .checkbox-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 0.5rem;
+            gap: 0.25rem;
         }
 
         .checkbox-item {
             display: flex;
             align-items: flex-start;
-            gap: 0.5rem;
+            gap: 0.25rem;
         }
 
         .checkbox-item label {
@@ -269,6 +272,13 @@
                             <label for="practitioner">Practitioner</label>
                             <input type="text" id="practitioner" value="{{Practitioner1}}" />
                         </div>
+                        <div class="form-group">
+                            <label for="rcNumber">RC Number</label>
+                            <input type="text" id="rcNumber" value="{{rcNumber}}" />
+                        </div>
+                        <div class="form-group">
+                            <input type="hidden" id="hidden1" class="hidden-field" value="" />
+                        </div>
                     </div>
                 </div>
 
@@ -282,8 +292,8 @@
                         </div>
                         <div class="form-group">
                             <label for="DateMinistryICFSANotified">Date Ministry/ICSA Notified</label>
-                            <input type="text" id="DateMinistryICFSANotified" />
-                        </div>
+                            <input type="text" id="DateMinistryICFSANotified" value="{{DateMinistryICFSANotified}}" />
+                          </div>
                         <div class="form-group">
                             <label for="careStatus">Care Status</label>
                             <input type="text" id="careStatus" value="{{careStatus1}}" />
@@ -304,30 +314,10 @@
                             <input type="text" id="reportablesubcategory" />
                         </div>
                     </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="other">If Other, Please Specify</label>
-                            <input type="text" id="other" value="{{IfOtherPleaseSpecify}}" />
-                        </div>
-                        <div class="form-group">
-                            <label for="youthJusticeCriticalIncident">Youth Justice Critical Incident</label>
-                            <input type="text" id="youthJusticeCriticalIncident"
-                                value="{{youthJusticeCriticalIncident}}" />
-                        </div>
-                    </div>
-
                     <div class="form-row">
                         <div class="form-group full-width">
                             <label for="descriptionOfIncident">Description Of Incident</label>
-                            <input type="text" id="descriptionOfIncident" value="{{descriptionOfIncident}}" />
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group full-width">
-                            <label for="practiceAnalystComments">Practice Analyst Comments</label>
-                            <input type="text" id="practiceAnalystComments" value="{{practiceAnalystComments}}" />
+                            <textarea id="descriptionOfIncident"> </textarea>
                         </div>
                     </div>
                 </div>
@@ -387,7 +377,7 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label for="indigenous2">Indigenous Heritage</label>
-                            <input type="text" id="indigenous2" />
+                            <input type="text" id="indigenous2" value="{{indigenous2}}" />
                         </div>
                         <div class="form-group">
                             <label for="icfsa">Indigenous Child and Family Service Agency</label>
@@ -401,25 +391,16 @@
 
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="indigenousHeritage2">Indigenous Heritage</label>
-                            <div class="checkbox-grid">
-                                <div class="checkbox-item">
-                                    <input type="checkbox" id="firstNations" value="firstNations" />
-                                    <label for="firstNations">First Nations </label>
-                                </div>
-                                <div class="checkbox-item">
-                                    <input type="checkbox" id="inuit" value="inuit" />
-                                    <label for="inuit">Inuit</label>
-                                </div>
-                                <div class="checkbox-item">
-                                    <input type="checkbox" id="metis" value="metis" />
-                                    <label for="metis">Metis</label>
-                                </div>
-                                <div class="checkbox-item">
-                                    <input type="checkbox" id="toBeDetermined" value="toBeDetermined" />
-                                    <label for="toBeDetermined">To Be Determined</label>
-                                </div>
-                            </div>
+                            <label for="indigenous2">Indigenous Heritage</label>
+                            <input type="text" id="indigenous2" value="{{indigenous2}}" />
+                        </div>
+                        <div class="form-group">
+                            <label for="icfsa">Indigenous Child and Family Service Agency</label>
+                            <input type="text" id="icfsa" value="{{icfsa}}" />
+                        </div>
+                        <div class="form-group">
+                            <label for="communityAgreement">Community/Coordination Agreement</label>
+                            <input type="text" id="communityAgreement" value="{{textField}}" />
                         </div>
                     </div>
                 </div>
@@ -477,36 +458,6 @@
         </div>
         <script>
             document.addEventListener("DOMContentLoaded", function () {
-                // Indigenous Information Section
-                var indigenousHeritage = "{{ indigenousHeritage }}";
-                indigenousHeritage = indigenousHeritage.replace(/&#39;/g, "'").replace(/True/g, "true").replace(/False/g, "false");
-
-                var indigenousHeritageObj = JSON.parse(indigenousHeritage.replace(/'/g, '"'));
-
-                for (var key in indigenousHeritageObj) {
-                    if (indigenousHeritageObj.hasOwnProperty(key)) {
-                        var checkbox = document.querySelector('input[value="' + key + '"]');
-                        if (checkbox) {
-                            checkbox.checked = indigenousHeritageObj[key];
-                        }
-                    }
-                }
-
-                var indigenousElements = {
-                    firstNations: 'firstNations',
-                    inuit: 'inuit',
-                    metis: 'metis',
-                    toBeDetermined: 'toBeDetermined'
-                };
-
-                for (var elem in indigenousElements) {
-                    if (indigenousElements.hasOwnProperty(elem)) {
-                        var element = document.getElementById(indigenousElements[elem]);
-                        if (element && indigenousHeritageObj[elem] === true) {
-                            element.checked = true;
-                        }
-                    }
-                }
 
                 // Date Formatting
                 function formatISODateToInput(isoDate) {
@@ -540,7 +491,7 @@
                 function setSelectValue(dataString, selectId) {
                     var dataObj = JSON.parse(dataString.replace(/&#39;/g, "'").replace(/'/g, '"'));
                     var selectElement = document.getElementById(selectId);
-                    if(selectElement) selectElement.value = dataObj.value;
+                    if (selectElement) selectElement.value = dataObj.value;
                 }
 
                 setSelectValue("{{ reportablecategory }}", "reportablecategory");
@@ -552,28 +503,22 @@
 
                     var selectedValue = (Array.isArray(dataArray) && dataArray.length > 0) ? dataArray[0] : "";
                     var selectElement = document.getElementById(selectId);
-                   if(selectElement) selectElement.value = selectedValue;
+                    if (selectElement) selectElement.value = selectedValue;
 
                 }
 
                 // ✅ Call function to update the field
                 setSelectValueFromArray("{{ indigenous2 }}", "indigenous2");
 
-
-                //data grid
-
-                function setDataGridValues(dataString, inputId1, inputId2) {
-                    const dataArray = JSON.parse(dataString.replace(/&#39;/g, "'").replace(/'/g, '"'));
-
-                    if (Array.isArray(dataArray) && dataArray.length > 0) {
-                        const firstEntry = dataArray[0]; // Extract first row only
-                        document.getElementById(inputId1).value = firstEntry.nameOfTheChildsParent || "";
-                        document.getElementById(inputId2).value = firstEntry.parentrelationship || "";
+                function setTextareaValue(dataString, textareaId) {
+                    var textArea = document.getElementById(textareaId);
+                    if (textArea) {
+                        textArea.value = dataString; // Set value to textarea
                     }
                 }
 
-                // ✅ Call function for first row only
-                setDataGridValues("{{ familyInformation }}", "nameOfTheChildsParent", "parentrelationship");
+                // Example usage with FormsFlow.ai data
+                setTextareaValue("{{ descriptionOfIncident }}", "descriptionOfIncident");
             });
         </script>
 </body>
