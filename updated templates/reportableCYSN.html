@@ -293,7 +293,7 @@
                         <div class="form-group">
                             <label for="DateMinistryICFSANotified">Date Ministry/ICSA Notified</label>
                             <input type="text" id="DateMinistryICFSANotified" value="{{DateMinistryICFSANotified}}" />
-                          </div>
+                        </div>
                         <div class="form-group">
                             <label for="careStatus">Care Status</label>
                             <input type="text" id="careStatus" value="{{careStatus1}}" />
@@ -490,7 +490,13 @@
                 function setSelectValue(dataString, selectId) {
                     var dataObj = JSON.parse(dataString.replace(/&#39;/g, "'").replace(/'/g, '"'));
                     var selectElement = document.getElementById(selectId);
-                    if (selectElement) selectElement.value = dataObj.value;
+                    if (dataObj.value === undefined && selectElement) {
+                        selectElement.value = "";
+                    }
+                    else {
+                        selectElement.value = dataObj.value;
+                    }
+
                 }
 
                 setSelectValue("{{ reportablecategory }}", "reportablecategory");
@@ -522,7 +528,7 @@
                 setTextareaValue("{{ additionalIncidentDetailsCYSN }}", "additionalIncidentDetailsCYSN");
                 setTextareaValue("{{ CYSNActionPlan }}", "CYSNActionPlan");
             });
-            
+
         </script>
 </body>
 

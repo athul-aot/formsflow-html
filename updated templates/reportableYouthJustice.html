@@ -378,7 +378,7 @@
           <div class="form-row">
             <div class="form-group">
               <label for="indigenous2">Indigenous Heritage</label>
-              <input type="text" id="indigenous2" value="{{indigenous2}}"/>
+              <input type="text" id="indigenous2" value="{{indigenous2}}" />
             </div>
             <div class="form-group">
               <label for="icfsa">Indigenous Child and Family Service Agency</label>
@@ -540,26 +540,26 @@
 
           <div class="form-row">
             <div class="form-group full-width">
-                <label for="currentOffences">Current Offences (i.e., as per the orders active at the time
-                    of the incident)</label>
-                <textarea id="currentOffences" > </textarea>
+              <label for="currentOffences">Current Offences (i.e., as per the orders active at the time
+                of the incident)</label>
+              <textarea id="currentOffences"> </textarea>
             </div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group full-width">
-              <label for="PreviousOffences">Previous Offences (specify the type of offence such as
-                  violent, property, breaches)</label>
-              <textarea id="PreviousOffences" ></textarea>
           </div>
-      </div>
 
-      <div class="form-row">
-          <div class="form-group full-width">
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="PreviousOffences">Previous Offences (specify the type of offence such as
+                violent, property, breaches)</label>
+              <textarea id="PreviousOffences"></textarea>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group full-width">
               <label for="response">Response to Youth Justice Services</label>
               <textarea id="ResponsetoYouthjusticServices"></textarea>
+            </div>
           </div>
-      </div>
           <div class="form-row">
             <div class="form-group">
               <label for="probationOfficer">Youth Probation Officer (given and surname)</label>
@@ -596,26 +596,26 @@
           <h3 class="section-heading">Response to Incident</h3>
 
           <div class="form-row">
-              <div class="form-group full-width">
-                  <label for="youthJusticeActionPlan">Youth Justice Action Plan</label>
-                  <textarea id="youthJusticeActionPlan"> </textarea>
-              </div>
+            <div class="form-group full-width">
+              <label for="youthJusticeActionPlan">Youth Justice Action Plan</label>
+              <textarea id="youthJusticeActionPlan"> </textarea>
+            </div>
           </div>
 
           <div class="form-row">
-              <div class="form-group full-width">
-                  <label for="policeFollowUp1">Police Information</label>
-                  <textarea id="policeFollowUp1"></textarea>
-              </div>
+            <div class="form-group full-width">
+              <label for="policeFollowUp1">Police Information</label>
+              <textarea id="policeFollowUp1"></textarea>
+            </div>
           </div>
 
           <div class="form-row">
-              <div class="form-group full-width">
-                  <label for="additionalIncidentDetailsYJ">Additional Incident Details</label>
-                  <textarea id="additionalIncidentDetailsYJ"> </textarea>
-              </div>
+            <div class="form-group full-width">
+              <label for="additionalIncidentDetailsYJ">Additional Incident Details</label>
+              <textarea id="additionalIncidentDetailsYJ"> </textarea>
+            </div>
           </div>
-      </div>
+        </div>
       </div>
     </div>
   </div>
@@ -692,7 +692,13 @@
       function setSelectValue(dataString, selectId) {
         var dataObj = JSON.parse(dataString.replace(/&#39;/g, "'").replace(/'/g, '"'));
         var selectElement = document.getElementById(selectId);
-        if (selectElement) selectElement.value = dataObj.value;
+        if (dataObj.value === undefined && selectElement) {
+          selectElement.value = "";
+        }
+        else {
+          selectElement.value = dataObj.value;
+        }
+
       }
 
       setSelectValue("{{ reportablecategory }}", "reportablecategory");
@@ -737,7 +743,7 @@
     setTextareaValue("{{ youthJusticeActionPlan }}", "youthJusticeActionPlan");
     setTextareaValue("{{ policeFollowUp1 }}", "policeFollowUp1");
     setTextareaValue("{{ additionalIncidentDetailsYJ }}", "additionalIncidentDetailsYJ");
-    
+
   </script>
 
 </body>

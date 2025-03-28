@@ -533,7 +533,13 @@
                 function setSelectValue(dataString, selectId) {
                     var dataObj = JSON.parse(dataString.replace(/&#39;/g, "'").replace(/'/g, '"'));
                     var selectElement = document.getElementById(selectId);
-                    if (selectElement) selectElement.value = dataObj.value;
+                    if (dataObj.value === undefined && selectElement) {
+                        selectElement.value = "";
+                    }
+                    else {
+                        selectElement.value = dataObj.value;
+                    }
+
                 }
 
                 setSelectValue("{{ reportablecategory }}", "reportablecategory");
@@ -581,7 +587,7 @@
                 setTextareaValue("{{ additionalIncidentDetailscfs }}", "additionalIncidentDetailscfs");
                 setTextareaValue("{{ cfsActionPlan }}", "cfsActionPlan");
                 setTextareaValue("{{ descriptionOfIncident }}", "descriptionOfIncident");
-                
+
             });
         </script>
 </body>
